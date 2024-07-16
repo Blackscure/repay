@@ -1,0 +1,64 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/MontserratBold.ttf);
+  font-family: "Monteserrat";
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/MonteserratRomanRegular.ttf);
+  font-family: "Monteserrat";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/MonteserratRegular.ttf);
+  font-family: "Monteserrat";
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/HindVadodaraSemiBold.ttf);
+  font-family: "Hind vadodara";
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/HindVadodaraBold.ttf);
+  font-family: "Hind vadodara";
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/HindVadodaraLight.ttf);
+  font-family: "Hind vadodara";
+  font-weight: 300;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/LatoRegular.ttf);
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url(/public/fonts/HindVadodararegular.ttf);
+  font-family: "Hind vadodara";
+  font-weight: 400;
+}
