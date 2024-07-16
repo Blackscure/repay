@@ -13,6 +13,18 @@
   margin-right: 92px;
 }
 
+.default-logo {
+  display: block; /* Show default logo by default */
+}
+
+.responsive-logo {
+  display: none; /* Hide responsive logo by default */
+}
+
+.stroke-image {
+  display: none; /* Initially hide stroke image */
+}
+
 .navbar-links {
   display: flex;
   align-items: center;
@@ -83,4 +95,46 @@
   font-size: 16px;
   font-style: normal;
   line-height: 125.882%; /* 20.141px */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 12px;
+  }
+
+  .default-logo {
+    display: none; /* Hide default logo on small screens */
+  }
+
+  .responsive-logo {
+    display: block; /* Show responsive logo on small screens */
+    width: 38px;
+    height: 27px;
+  }
+
+  .stroke-image {
+    display: block; /* Show stroke image on small screens */
+    width: 30.75px;
+    height: 20.5px;
+    margin-left: auto; /* Push stroke image to the right */
+  }
+
+  .responsive-stroke-container {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+  }
+
+  .navbar-links,
+  .navbar-search,
+  .navbar-auth {
+    display: none;
+  }
 }

@@ -1,17 +1,31 @@
-import { Heading } from "../Heading/Index";
-import { Text } from "../Text";
-import { Button } from "../Button";
-import { Img } from "../Img";
 import React from "react";
 import ImgLogo from "../../assets/images/img_logo.svg";
+import responsiveLogo from "../../assets/images/Union.svg";
+import strokeImage from "../../assets/images/Vector.svg";
 import searchIcon from "../../assets/images/Search.svg";
 import "./Header.css";
 
 export default function Header(props) {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <img src={ImgLogo} alt="Logo" />
+      <div className="navbar-left">
+        <div className="navbar-logo">
+          <img src={ImgLogo} alt="Logo" className="default-logo" />
+        </div>
+      </div>
+      <div className="navbar-right">
+        <div className="responsive-stroke-container">
+          <img
+            src={responsiveLogo}
+            alt="Responsive Logo"
+            className="responsive-logo"
+          />
+          <img
+            src={strokeImage}
+            className="stroke-image"
+            alt="Stroke Vector Image"
+          />
+        </div>
       </div>
       <div className="navbar-links">
         <a href="#home" className="home-link">
