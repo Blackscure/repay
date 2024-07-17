@@ -1,0 +1,130 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;  /* Adjust the margin as needed */
+  margin-right: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.creativity-community {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.creativity {
+  color: #4E1C4E;
+  font-family: "Hind Vadodara";
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.8%; /* 86.826px */
+  letter-spacing: -0.87px;
+}
+
+.meets-community {
+  color: #331B3B;
+  font-family: "Hind Vadodara";
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 99.8%;
+  letter-spacing: -0.87px;
+}
+
+.stroke {
+  align-self: stretch;
+  width: 100%;
+  
+}
+
+.stroke img {
+  width: 100%; /* Makes the image stretch to full width of the div */
+}
+
+.creative-hub {
+  width: 413px;
+  height: 156px;
+}
+
+.creative-hub p {
+  color: rgba(51, 27, 59, 0.66);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.3%; /* 26.334px */
+  letter-spacing: 0.36px;
+}
+
+.download-now {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.download-now p {
+  color: #000;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.store-icons {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cream-image {
+  width: 867.538px;
+  height: 819.823px;
+  flex-shrink: 0;
+  background: url('../assets/images/img_vector_1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.purple-image {
+  width: 444px;
+  height: 629.17px;
+  flex-shrink: 0;
+  background: url('../assets/images/img_vector_13.svg') no-repeat center center;
+  background-size: cover;
+  fill: #4E1C4E;
+  stroke-width: 1px;
+  stroke: #FDC221;
+}
+
+.background-image {
+  width: 927px;
+  height: 652px;
+  flex-shrink: 0;
+  background: url('../assets/images/two-people-using-laptop-meeting-coffee-shop\ 1.png') lightgray -31.228px 9.366px / 106.059% 100% no-repeat;
+}
+
+.dashed-border {
+  width: 581px;
+  height: 498px;
+  flex-shrink: 0;
+  border-radius: 581px;
+  border: 2px dashed #000;
+}
