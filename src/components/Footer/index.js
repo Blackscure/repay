@@ -3,72 +3,65 @@ import { Heading } from "../Heading/Index";
 import { Img } from "../Img";
 import { Text } from "../Text";
 import FooterImg from "../../assets/images/img_footer_logo.png";
+import locationIcon from "../../assets/images/carbon_location-filled.svg"
+import  emailIcon from "../../assets/images/ic_sharp-email.svg";
+import phoneIcon from "../../assets/images/bxs_phone-call.svg";
+import groupIcon1 from "../../assets/images/Group 1000001749.svg";
+import groupIcon2 from "../../assets/images/Group 1000001750.svg";
+import groupIcon3 from "../../assets/images/Group 1000001753.svg";
+import "./footer.css";
 
 export default function Footer({ className, ...props }) {
   return (
-    <footer
-      {...props}
-      className={`${className} flex justify-center items-center p-12 md:p-5 rounded-tr-[118px] bg-[#4e1c4e]`}
-    >
-      <div className="mx-auto flex w-full max-w-[1122px] items-center justify-between gap-5 md:flex-col">
-        <div className="flex w-[38%] flex-col gap-2 md:w-full">
-          <Img
-            src={FooterImg}
-            alt="Footer Logo"
-            className="h-[52px] w-[122px] object-contain"
-          />
-          <Text
-            size="texts"
-            as="p"
-            className="leading-[146.3%] tracking-[0.34px] text-white"
-            style={{
-              fontFamily: "Hind Vadodara, sans-serif", // Make sure to import the font
-            }}
-          >
-            <>
-              We provide a platform where your ideas can flourish, your talents
-              can shine, and your passions can connect with a like-minded
-              community.
-              <br />
-              <br />
-            </>
-          </Text>
+    <footer className="footer">
+      <div className="footer-column">
+        <div className="footer-header">
+          <span className="footer-title">TipSource</span>
         </div>
-        <div className="flex w-[30%] flex-col gap-1.5 self-start md:w-full md:self-auto">
-          <div className="flex items-center gap-[25px]">
-            <Img
-              src="images/img_carbon_location_filled.svg"
+        <div className="footer-description">
+          <p>
+            We provide a platform where your ideas can flourish, your talents
+            can shine, and your passions can connect with a like-minded
+            community.
+          </p>
+        </div>
+      </div>
+      <div className="footer-column">
+        <div className="footer-contact">
+          <div className="footer-contact-item">
+            <img
+              src={locationIcon}
               alt="Location Icon"
-              className="h-[24px] w-[24px]"
+              className="footer-icon"
             />
-            <Text as="p" className="text-white">
-              15464 - 00100 Nairobi, Kenya
-            </Text>
+            <span className="footer-text">Your Location</span>
           </div>
-          <div className="flex w-[54%] flex-col gap-1.5 md:w-full">
-            <div className="flex items-center gap-6">
-              <Img
-                src="images/img_ic_sharp_email.svg"
-                alt="Email Icon"
-                className="h-[24px] w-[24px]"
-              />
-              <Text as="p" className="self-end text-white">
-                +254 734 789
-              </Text>
-            </div>
+          <div className="footer-contact-item">
+            <img src={emailIcon} alt="Email Icon" className="footer-icon" />
+            <span className="footer-text">ZenPay@gmail.com</span>
+          </div>
+          <div className="footer-contact-item">
+            <img src={phoneIcon} alt="Phone Icon" className="footer-icon" />
+            <span className="footer-text">+254 734 789</span>
           </div>
         </div>
-        <div className="flex w-[18%] flex-col items-start gap-3.5 md:w-full">
-          <Heading
-            as="h6"
-            className="font-semibold uppercase tracking-[0.32px] text-white"
-          >
-            Follow us
-          </Heading>
-          <Img
-            src="images/img_frame_1171276259.png"
-            alt="Social Icon"
-            className="mb-[68px] h-[30px] object-cover"
+      </div>
+      <div className="footer-column">
+        <div className="footer-social">
+          <img
+            src={groupIcon1}
+            alt="Group Icon 1"
+            className="footer-social-icon"
+          />
+          <img
+            src={groupIcon2}
+            alt="Group Icon 2"
+            className="footer-social-icon"
+          />
+          <img
+            src={groupIcon3}
+            alt="Group Icon 3"
+            className="footer-social-icon"
           />
         </div>
       </div>

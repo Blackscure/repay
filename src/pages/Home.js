@@ -17,6 +17,7 @@ import appStoreImage from "../assets/images/image 7.svg";
 // import purpleVectorImage from "../assets/images/img_vector_13.svg";
 // import famImage from "../assets/images/two-people-using-laptop-meeting-coffee-shop 1.png";
 import './Home.css';
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
             <div className="dashed-border"></div>
           </div> */}
         </div>
+        <Footer/>
       </div>
     </>
   );
